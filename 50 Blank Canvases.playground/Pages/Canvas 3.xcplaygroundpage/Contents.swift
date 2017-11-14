@@ -22,8 +22,44 @@ let canvas = Canvas(width: 400, height: 300)
  
  Use whitespace and comments as appropriate.
  */
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
+//show the axes
+canvas.drawAxes()
 
+//thick lines
+canvas.defaultLineWidth = 5
+
+//draw my line
+canvas.drawLine(fromX: 0, fromY: 0, toX: 100, toY: 0)
+
+//Move origin to end line
+canvas.translate(byX: 100, byY: 0)
+
+//show the axes
+canvas.drawAxes()
+
+//rotate the canvas
+canvas.rotate(by: 120)
+
+//draw the axes
+canvas.drawAxes()
+
+//draw the 2nd side
+canvas.drawLine(fromX: 0, fromY: 0, toX: 100, toY: 0)
+
+//translate again
+canvas.translate(byX: 100, byY: 0)
+
+//rotate again
+canvas.rotate(by: 120)
+
+//draw the 3rd side
+canvas.drawLine(fromX: 0, fromY: 0, toX: 100, toY: 0)
+
+//translate again
+canvas.translate(byX: 100, byY: 0)
+
+//rotate again
+canvas.rotate(by: 120)
 
 
 /*:
